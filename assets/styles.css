@@ -31,12 +31,16 @@ body{
 }
 
 #head{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     height: 3em;
     padding-top: 7px;
+    z-index: 4;
+    
 }
 
 .head-inputt{
@@ -79,16 +83,18 @@ body{
 
 
 
+
+
 /*Main*/
 
 main{
+    padding-top: 3em;
     background-color: #3A3838;
     height: auto;
 }
 
 h1{
     margin: 0;
-    padding: 2rem;
     text-align: center;
     color: #BC3535;
     font-family: 'Irish Grover', cursive;
@@ -216,7 +222,7 @@ footer{
     margin: 1em ;
 }
 
-.btn{
+.btnS{
     background-color: #BC3535;
     height: 3em;
     font-weight: 700;
@@ -245,4 +251,32 @@ footer{
     height: 2em;
     background-color: #BC3535;
     border-radius: 30%;
+}
+
+
+/*Burger Menú*/
+
+.btn{
+    position: relative;
+    z-index: 5;
+}
+
+
+
+.panel{
+    position: fixed;
+    z-index: 3;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    width: 100%;
+    background-color: rgba(114, 31, 31,0.4);
+    transition: all 0.3s ease;
+    transform: translate(0,-100%);
+}
+
+.panel.is-active{
+    transform: translate(0,0);
 }

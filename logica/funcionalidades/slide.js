@@ -1,8 +1,7 @@
 const d = document;
 
-d.addEventListener("DOMContentLoaded",slide);
 
-function slide(){
+export default function slide(){
    let $slide = d.querySelectorAll(".slider-slide"),
        $prevBtn = d.querySelector(".prev"),
        $nextBtn = d.querySelector(".next"),
