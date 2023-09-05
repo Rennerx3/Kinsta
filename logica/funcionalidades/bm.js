@@ -10,5 +10,9 @@ export default function burgerMenu(){
         if(e.target.matches(".btn") || e.target.matches(".btn *")){
             $panel.classList.toggle("is-active");
         }
+        
+        if(e.target.matches(".menu *")){
+            $panel.classList.remove("is-active");
+        }
     });
 }

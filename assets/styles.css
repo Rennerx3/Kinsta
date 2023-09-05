@@ -280,3 +280,61 @@ footer{
 .panel.is-active{
     transform: translate(0,0);
 }
+
+.menu{
+    padding-top: 5rem;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a{
+    padding: 3rem;
+    text-decoration: none;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 300;
+}
+
+.menu a:hover{
+    color: red;
+    background-color: rgba(114, 31, 31,0.6);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px){
+    #footer-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        height: auto;
+        background-color: black;
+        padding: 2em;
+    }
+
+    #footer-div > *{
+        padding: 1em;
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+
+    main > h1{
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    .head-input{
+        display: none;
+    }
+
+  
+}
