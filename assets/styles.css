@@ -379,15 +379,25 @@ footer{
     text-align: center;
     background-color: rgba(164, 31, 31, 0.562);
     gap: 20px;
+    padding: 10px;
 }
 
 .product{
     background-color: #201f1f61;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product:hover{
+    transform: scale(0.8);
+    background-color: #201f1fa3;
+    color: #BC3535;
+    font-weight: 700;
 }
 
 .product img{
-    width: 50%;
-    height: 40%;
+    width: 100%;
+    height: auto;
     margin-top: 1em;
     border-bottom: solid black 2px;
     padding-bottom: 10px;
@@ -395,7 +405,6 @@ footer{
 
 .product span{
     display: block;
-    color: #BC3535;
 }
 
 .product p{
