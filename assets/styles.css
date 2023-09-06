@@ -43,6 +43,7 @@ body{
     
 }
 
+
 .head-inputt{
     border-radius: 30px;
     background-color: #BC3535;
@@ -272,13 +273,17 @@ footer{
     right: 0;
     overflow-y: auto;
     width: 100%;
-    background-color: rgba(114, 31, 31,0.4);
+    background-color: rgba(0, 0, 0, 0.727);
     transition: all 0.3s ease;
     transform: translate(0,-100%);
 }
 
 .panel.is-active{
     transform: translate(0,0);
+}
+
+.head-input.is-active{
+    display: none
 }
 
 .menu{
@@ -297,7 +302,7 @@ footer{
     width: inherit;
     display: block;
     font-size: 1.5rem;
-    color: black;
+    color: #BC3535;
     font-weight: 300;
 }
 
@@ -413,4 +418,29 @@ footer{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+}
+
+@media screen and (max-width: 800px){
+    #menu-C{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #menu-C{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product{
+        margin: 30px;
+    }
 }
