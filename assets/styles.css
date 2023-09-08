@@ -535,3 +535,52 @@ label[name]{
         flex-direction: column;
     }
 }
+
+/*Validación de formulario*/
+
+.form-elements{
+    --form-correct: #4caf50;
+    --form-error: #ff00bb;
+}
+
+.form-elements [required]:valid{
+    border: thin solid var(--form-correct);
+}
+
+.form-elements [required]:invalid{
+    border: thin solid var(--form-error);
+}
+
+.contact-form-error{
+    text-align: center;
+    padding: 0;
+    width: 60%;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 80%;
+    background-color: var(--form-error);
+    color: black;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s normal 0s ease-out both;
+}
+
+.none{
+    display: none;
+}
+
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+

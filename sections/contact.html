@@ -34,15 +34,15 @@
                     <form>
                         <div class="form-elements">
                             <label name="" for="">Nombre</label>
-                            <input data-attribute  type="text" required>
+                            <input data-attribute title="Solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜüs]+$" name="name" type="text" required>
                         </div>
                         <div class="form-elements">
                             <label name="" for="">Apellido</label>
-                            <input data-attribute type="text" required>
+                            <input data-attribute title="Solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜüs]+$" name="surname" type="text" required>
                         </div>
                         <div class="form-elements">
                             <label name="" for="">Email</label>
-                            <input data-attribute type="email" required>
+                            <input data-attribute title="Ingrese una dirección de correo valida" pattern="^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$" name="email" type="email" required>
                         </div>
                         <div class="form-elementss">
                             <label  data-value="excluir">Sexo:</label>
@@ -61,10 +61,10 @@
                         </div>
                         <div class="form-elements">
                             <label name="" for="Tema">Tema</label>
-                            <input data-attribute type="text" required>
+                            <input data-attribute title="El tema es requerido" name="theme" type="text" required>
                         </div>
                         <div class="form-elements">
-                            <input data-attribute="button" type="button" value="Enviar">
+                            <input data-attribute="button" type="submit" value="Enviar">
                         </div>
                     </form>
                 </div>
